@@ -1,46 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-    <input type="text"
-        readonly="readonly"
-        disabled="disabled" />
-    <br />
-    <input type="text"
-        readonly="readonly"
-        disabled="disabled"
-        placeholder="informe o valor aqui" />
-    <br />
-    <input type="button" value="CE" />
-    <input type="button" value="C" />
-    <input type="button" value="&lArr;" />
-    <input type="button" value="&sol;" />
-    <br />
-    <input type="button" value="7" />
-    <input type="button" value="8" />
-    <input type="button" value="9" />
-    <input type="button" value="&times;" />
-    <br />
-    <input type="button" value="4" />
-    <input type="button" value="5" />
-    <input type="button" value="6" />
-    <input type="button" value="&minus;" />
-    <br />
-    <input type="button" value="3" />
-    <input type="button" value="2" />
-    <input type="button" value="1" />
-    <input type="button" value="&plus;" />
-    <br />
-    <input type="button" value="&plusmn;" />
-    <input type="button" value="0" />
-    <input type="button" value="&comma;" />
-    <input type="button" value="&equals;" />
-    <script src="calculadora.js"> </script> 
+    <title> Calculadora </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="calculadora.js"></script>
+
+</head> 
+<body> 
+
+     <div class="container">
+
+     <header class="top">
+       <form class="form" method="">
+           <label id="op"></label>
+       <input type="text" id="result" class="campo">
+
+     </form>
+     </header>
+
+     <section class="body">
+         <input type="button" value="7" name="btn" class="btn">
+         <input type="button" value="8" name="btn" class="btn">
+         <input type="button" value="9" name="btn" class="btn">
+         <input type="button" value="+" name="soma" class="btn">
+         <input type="button" value="C" name="btn" class="btn">
+         <input type="button" value="4" name="btn" class="btn">
+         <input type="button" value="5" name="btn" class="btn">
+         <input type="button" value="6" name="btn" class="btn">
+         <input type="button" value="-" name="btn" class="btn">
+         <input type="button" value="CE" name="ce" class="btn">
+         <input type="button" value="1" name="btn" class="btn">
+         <input type="button" value="2" name="btn" class="btn">
+         <input type="button" value="3" name="btn" class="btn">
+         <input type="button" value="*" name="btn" class="btn">
+         <input type="button" value="=" name="btn" class="btn igual">
+         <input type="button" value="0" name="btn" class="btn zero">
+         <input type="button" value="." name="btn" class="btn ">
+         <input type="button" value="/" name="btn" class="btn ">
+         
+              
+
+     </section>
+ </div>
 </body>
 </html>
